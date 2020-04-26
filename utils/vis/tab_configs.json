@@ -1,0 +1,805 @@
+{
+  "raw_data": "/Users/honghan.wu/Documents/UoE/covid/data/covid-19_data_20200410_preprocessed.tsv",
+  "desc_tab": [
+    {
+      "category": "Demographic",
+      "variables": [
+        {
+          "label": "Age",
+          "field": "age",
+          "type": "numeric"
+        },
+        {
+          "label": "Sex (male) ",
+          "field": "male",
+          "type": "binary"
+        }
+      ]
+    },
+    {
+      "category": "Underlying Conditions",
+      "variables": [
+        {
+          "label": "Chronic lung disease  ",
+          "field": "chronic_lung_disease",
+          "type": "binary"
+        },
+        {
+          "label": "Weakened immune system ",
+          "field": "immunocompromised",
+          "type": "binary"
+        },
+        {
+          "label": "Malignancy",
+          "field": "malignancy",
+          "type": "binary"
+        },
+        {
+          "label": "Hypertension ",
+          "field": "hypertension",
+          "type": "binary"
+        },
+        {
+          "label": "Heart disease ",
+          "field": "heart_disease",
+          "type": "binary"
+        },
+        {
+          "label": "Chronic renal disease ",
+          "field": "chronic_renal_disease",
+          "type": "binary"
+        }
+      ]
+    },
+    {
+      "category": "Symptoms",
+      "variables": [
+        {
+          "label": "fever  ",
+          "field": "fever",
+          "type": "binary"
+        },
+        {
+          "label": "coughing ",
+          "field": "coughing",
+          "type": "binary"
+        },
+        {
+          "label": "fatigue ",
+          "field": "fatigue",
+          "type": "binary"
+        },
+        {
+          "label": "dyspnea ",
+          "field": "dyspnea",
+          "type": "binary"
+        },
+        {
+          "label": "diarrhea ",
+          "field": "diarrhea",
+          "type": "binary"
+        }
+      ]
+    },
+    {
+      "category": "Admission clinical features",
+      "variables": [
+        {
+          "label": "CURB-65 Score",
+          "field": "curb_65",
+          "type": "numeric"
+        },
+        {
+          "label": "ARDS mild ",
+          "field": "ards_mild",
+          "type": "binary"
+        },
+        {
+          "label": "ARDS moderate ",
+          "field": "ards_moderate",
+          "type": "binary"
+        },
+        {
+          "label": "ARDS severe ",
+          "field": "ards_severe",
+          "type": "binary"
+        },
+        {
+          "label": "IgM antibodies (g/L)",
+          "field": "igm_antibody",
+          "type": "numeric",
+          "decimal": true
+        },
+        {
+          "label": "IgG antibodies (g/L)",
+          "field": "igg_antibody",
+          "type": "numeric",
+          "decimal": true
+        },
+        {
+          "label": "Neutrophil count (10^9/L)",
+          "field": "neutrophil_1",
+          "type": "numeric",
+          "decimal": true
+        },
+        {
+          "label": "Lymphocyte (10^9/L)",
+          "field": "lymphocyte_1",
+          "type": "numeric",
+          "decimal": true
+        },
+        {
+          "label": "Platelet (10^9/L)",
+          "field": "platelet_1",
+          "type": "numeric",
+          "decimal": false
+        },
+        {
+          "label": "C-reactive protein (mg/L)",
+          "field": "crp_1",
+          "type": "numeric",
+          "decimal": true
+        },
+        {
+          "label": "D-dimer (mg/L)",
+          "field": "d_dimer_1",
+          "type": "numeric",
+          "decimal": true
+        },
+        {
+          "label": "Creatinine",
+          "field": "creatinine",
+          "type": "numeric",
+          "decimal": true
+        },
+        {
+          "label": "Alanine aminotransferase (IU/L)",
+          "field": "alt",
+          "type": "numeric",
+          "decimal": true
+        }
+      ]
+    },
+    {
+      "category": "Hospital course",
+      "variables": [
+        {
+          "label": "Hospitalisation duration",
+          "field": "hospitalization_duration",
+          "type": "numeric"
+        }
+      ]
+    },
+    {
+      "category": "Interventions  ",
+      "variables": [
+        {
+          "label": "Oxygen therapy",
+          "field": "oxygen_therapy",
+          "type": "binary"
+        },
+        {
+          "label": "Noninvasive positive pressure ventilation",
+          "field": "nppv",
+          "type": "binary"
+        },
+        {
+          "label": "High Flow Nasal Cannula",
+          "field": "hfnc",
+          "type": "binary"
+        },
+        {
+          "label": "Intubation",
+          "field": "intubation",
+          "type": "binary"
+        },
+        {
+          "label": "Extracorporeal membrane oxygenation",
+          "field": "ecmo",
+          "type": "binary"
+        },
+        {
+          "label": "Steroid",
+          "field": "steroid",
+          "type": "binary"
+        }
+      ]
+    }
+  ],
+  "univariate": [
+    {
+      "category": "Demographic",
+      "variables": [
+        {
+          "label": "Age",
+          "field": "age",
+          "type": "numeric"
+        },
+        {
+          "label": "Sex (male) ",
+          "field": "male",
+          "type": "binary"
+        }
+      ]
+    },
+    {
+      "category": "Underlying Conditions",
+      "variables": [
+        {
+          "label": "Chronic lung disease  ",
+          "field": "chronic_lung_disease",
+          "type": "binary"
+        },
+        {
+          "label": "Weakened immune system ",
+          "field": "immunocompromised",
+          "type": "binary"
+        },
+        {
+          "label": "Malignancy",
+          "field": "malignancy",
+          "type": "binary"
+        },
+        {
+          "label": "Hypertension ",
+          "field": "hypertension",
+          "type": "binary"
+        },
+        {
+          "label": "Heart disease ",
+          "field": "heart_disease",
+          "type": "binary"
+        },
+        {
+          "label": "Chronic renal disease ",
+          "field": "chronic_renal_disease",
+          "type": "binary"
+        }
+      ]
+    },
+    {
+      "category": "Symptoms",
+      "variables": [
+        {
+          "label": "fever  ",
+          "field": "fever",
+          "type": "binary"
+        },
+        {
+          "label": "coughing ",
+          "field": "coughing",
+          "type": "binary"
+        },
+        {
+          "label": "fatigue ",
+          "field": "fatigue",
+          "type": "binary"
+        },
+        {
+          "label": "dyspnea ",
+          "field": "dyspnea",
+          "type": "binary"
+        },
+        {
+          "label": "diarrhea ",
+          "field": "diarrhea",
+          "type": "binary"
+        }
+      ]
+    },
+    {
+      "category": "Admission clinical features",
+      "variables": [
+        {
+          "label": "Neutrophil count (10^9/L)",
+          "field": "neutrophil_1",
+          "type": "numeric"
+        },
+        {
+          "label": "Lymphocyte (10^9/L)",
+          "field": "lymphocyte_1",
+          "type": "numeric"
+        },
+        {
+          "label": "Platelet (10^9/L)",
+          "field": "platelet_1",
+          "type": "numeric"
+        },
+        {
+          "label": "C-reactive protein (mg/L)",
+          "field": "crp_1",
+          "type": "numeric"
+        },
+        {
+          "label": "Creatinine",
+          "field": "creatinine",
+          "type": "numeric"
+        }
+      ]
+    }
+  ],
+  "predictors_point_plots": {
+    "data_file": "/Users/honghan.wu/Documents/UoE/covid/fig_requests/predictor_comparison_l1.tsv",
+    "output_folder": "/Users/honghan.wu/Documents/UoE/covid/fig_requests/",
+    "predictor_groups": [
+      {
+        "name": "condition vs labs",
+        "group_config": [
+          {
+            "feature_grp": [
+              "basic_condi",
+              "basic_condi_lab"
+            ],
+            "x_labels": [
+              "conditions",
+              "conditions + blood tests"
+            ],
+            "features": [
+              "diabetes_mellitus_norm",
+              "chronic_lung_disease_norm",
+              "immunocompromised_norm",
+              "malignancy_norm",
+              "hypertension_norm",
+              "heart_disease_norm",
+              "chronic_renal_disease_norm"
+            ],
+            "colors": [
+              "darkorchid",
+              "purple",
+              "crimson",
+              "navy",
+              "slateblue",
+              "navy",
+              "slategrey"
+            ]
+          },
+          {
+            "feature_grp": [
+              "basic_lab",
+              "basic_condi_lab"
+            ],
+            "x_labels": [
+              "blood tests",
+              "conditions + blood tests"
+            ],
+            "features": [
+              "neutrophil_1_norm",
+              "lymphocyte_1_norm",
+              "platelet_1_norm",
+              "crp_1_norm",
+              "creatinine_norm"
+            ],
+            "colors": [
+              "steelblue",
+              "deepskyblue",
+              "darkcyan",
+              "dodgerblue",
+              "olivedrab"
+            ]
+          }
+        ],
+        "legent_texts": [
+          "diabetes",
+          "chronic lung disease",
+          "immunocompromised",
+          "malignancy",
+          "hypertension",
+          "heart disease",
+          "chronic renal disease",
+          "neutrophil",
+          "lymphocyte",
+          "platelet",
+          "crp",
+          "creatinine"
+        ],
+        "models": [
+          "death",
+          "poor_prognosis",
+          "death_within_14days"
+        ],
+        "model_labels": [
+          "death",
+          "poor outcome",
+          "death within 14days"
+        ]
+      },
+      {
+        "name": "condition vs symptoms",
+        "group_config": [
+          {
+            "feature_grp": [
+              "basic_condi",
+              "basic_condi_symp"
+            ],
+            "x_labels": [
+              "conditions",
+              "conditions + symptoms"
+            ],
+            "features": [
+              "diabetes_mellitus_norm",
+              "chronic_lung_disease_norm",
+              "immunocompromised_norm",
+              "malignancy_norm",
+              "hypertension_norm",
+              "heart_disease_norm",
+              "chronic_renal_disease_norm"
+            ],
+            "colors": [
+              "darkorchid",
+              "purple",
+              "crimson",
+              "navy",
+              "slateblue",
+              "navy",
+              "slategrey"
+            ]
+          },
+          {
+            "feature_grp": [
+              "basic_symp",
+              "basic_condi_symp"
+            ],
+            "x_labels": [
+              "symptoms",
+              "conditions + symptoms"
+            ],
+            "features": [
+              "fever_norm", "coughing_norm", "fatigue_norm", "dyspnea_norm", "diarrhea_norm"
+            ],
+            "colors": [
+              "steelblue",
+              "deepskyblue",
+              "darkcyan",
+              "dodgerblue",
+              "olivedrab"
+            ]
+          }
+        ],
+        "legent_texts": [
+          "diabetes",
+          "chronic lung disease",
+          "immunocompromised",
+          "malignancy",
+          "hypertension",
+          "heart disease",
+          "chronic renal disease",
+          "fever", "coughing", "fatigue", "dyspnea", "diarrhea"
+        ],
+        "models": [
+          "death",
+          "poor_prognosis",
+          "death_within_14days"
+        ],
+        "model_labels": [
+          "death",
+          "poor outcome",
+          "death within 14days"
+        ]
+      },
+      {
+        "name": "symptoms vs labs",
+        "group_config": [
+          {
+            "feature_grp": [
+              "basic_symp",
+              "basic_symp_lab"
+            ],
+            "x_labels": [
+              "symptoms",
+              "symptoms + blood tests"
+            ],
+            "features": [
+              "fever_norm", "coughing_norm", "fatigue_norm", "dyspnea_norm", "diarrhea_norm"
+            ],
+            "colors": [
+              "darkorchid",
+              "purple",
+              "crimson",
+              "navy",
+              "slateblue"
+            ]
+          },
+          {
+            "feature_grp": [
+              "basic_lab",
+              "basic_symp_lab"
+            ],
+            "x_labels": [
+              "blood tests",
+              "symptoms + blood tests"
+            ],
+            "features": [
+              "neutrophil_1_norm",
+              "lymphocyte_1_norm",
+              "platelet_1_norm",
+              "crp_1_norm",
+              "creatinine_norm"
+            ],
+            "colors": [
+              "steelblue",
+              "deepskyblue",
+              "darkcyan",
+              "dodgerblue",
+              "olivedrab"
+            ]
+          }
+        ],
+        "legent_texts": [
+          "fever", "coughing", "fatigue", "dyspnea", "diarrhea",
+          "neutrophil",
+          "lymphocyte",
+          "platelet",
+          "crp",
+          "creatinine"
+        ],
+        "models": [
+          "death",
+          "poor_prognosis",
+          "death_within_14days"
+        ],
+        "model_labels": [
+          "death",
+          "poor outcome",
+          "death within 14days"
+        ]
+      }
+    ]
+  },
+  "validation_auc": {
+    "prob_lifting_files": [
+      "/Users/honghan.wu/Documents/UoE/covid/models/kch_validation_results/14042020/kch_death_prob_lifting.o",
+      "/Users/honghan.wu/Documents/UoE/covid/data/latest_analysis_output/prob_lifting/death_basic_condi_symp_lab_prob_lifting.tsv",
+      "/Users/honghan.wu/Documents/UoE/covid/data/latest_analysis_output/prob_lifting/death_basic_condi_symp_prob_lifting.tsv",
+      "/Users/honghan.wu/Documents/UoE/covid/data/latest_analysis_output/prob_lifting/death_basic_lab_prob_lifting.tsv"
+    ],
+    "labels": ["DL-Death @KCH",
+      "DCSL-Death @Wuhan",
+      "DCS-Death @Wuhan",
+      "DL-Death @Wuhan"
+    ]
+  },
+  "validation_auc_b": {
+  "prob_lifting_files": [
+    "/Users/honghan.wu/Documents/UoE/covid/models/kch_validation_results/14042020/kch_poor_prob_lifting.o",
+    "/Users/honghan.wu/Documents/UoE/covid/data/latest_analysis_output/prob_lifting/poor_prognosis_basic_condi_symp_lab_prob_lifting.tsv",
+    "/Users/honghan.wu/Documents/UoE/covid/data/latest_analysis_output/prob_lifting/poor_prognosis_basic_condi_symp_prob_lifting.tsv",
+    "/Users/honghan.wu/Documents/UoE/covid/data/latest_analysis_output/prob_lifting/poor_prognosis_basic_lab_prob_lifting.tsv"
+  ],
+  "labels": ["DL-Poor Outcome @KCH",
+    "DCSL-Poor Outcome @Wuhan",
+    "DCS-Poor Outcome @Wuhan",
+    "DL-Poor Outcome @Wuhan"
+  ]
+},
+  "univariate_files": {
+    "cat_file": "/Users/honghan.wu/Documents/UoE/covid/data/latest_analysis_output/univariate_analysis/univariate_categorical_all_data_0410.tsv",
+    "num_file": "/Users/honghan.wu/Documents/UoE/covid/data/15042020/univariate_continuous_all_data_0410.tsv",
+    "cv_tuning_file": "/Users/honghan.wu/Documents/UoE/covid/data/OneDrive_3_09-04-2020/data_for_figures/cv_tuning_summary_l1_0405.tsv"
+  },
+  "model_coefs": {
+    "feature_groups": [
+      {
+        "category": "Demographic",
+        "variables": [
+          {
+            "label": "Age",
+            "field": "age",
+            "type": "numeric"
+          },
+          {
+            "label": "Sex (male) ",
+            "field": "male",
+            "type": "binary"
+          }
+        ]
+      },
+      {
+        "category": "Underlying Conditions",
+        "variables": [
+          {
+            "label": "Chronic lung disease  ",
+            "field": "chronic_lung_disease",
+            "type": "binary"
+          },
+          {
+            "label": "Weakened immune system ",
+            "field": "immunocompromised",
+            "type": "binary"
+          },
+          {
+            "label": "Malignancy",
+            "field": "malignancy",
+            "type": "binary"
+          },
+          {
+            "label": "Hypertension ",
+            "field": "hypertension",
+            "type": "binary"
+          },
+          {
+            "label": "Heart disease ",
+            "field": "heart_disease",
+            "type": "binary"
+          },
+          {
+            "label": "Chronic renal disease ",
+            "field": "chronic_renal_disease",
+            "type": "binary"
+          }
+        ]
+      },
+      {
+        "category": "Symptoms",
+        "variables": [
+          {
+            "label": "fever  ",
+            "field": "fever",
+            "type": "binary"
+          },
+          {
+            "label": "coughing ",
+            "field": "coughing",
+            "type": "binary"
+          },
+          {
+            "label": "fatigue ",
+            "field": "fatigue",
+            "type": "binary"
+          },
+          {
+            "label": "dyspnea ",
+            "field": "dyspnea",
+            "type": "binary"
+          },
+          {
+            "label": "diarrhea ",
+            "field": "diarrhea",
+            "type": "binary"
+          }
+        ]
+      },
+      {
+        "category": "Admission clinical features",
+        "variables": [
+          {
+            "label": "Neutrophil count (10^9/L)",
+            "field": "neutrophil_1",
+            "type": "numeric",
+            "decimal": true
+          },
+          {
+            "label": "Lymphocyte (10^9/L)",
+            "field": "lymphocyte_1",
+            "type": "numeric",
+            "decimal": true
+          },
+          {
+            "label": "Platelet (10^9/L)",
+            "field": "platelet_1",
+            "type": "numeric",
+            "decimal": false
+          },
+          {
+            "label": "C-reactive protein (mg/L)",
+            "field": "crp_1",
+            "type": "numeric",
+            "decimal": true
+          },
+          {
+            "label": "Creatinine",
+            "field": "creatinine",
+            "type": "numeric",
+            "decimal": true
+          }
+        ]
+      }
+    ],
+    "model_selector": [
+      {
+        "outcome": "death",
+        "feature": "basic_condi_symp"
+      },
+      {
+        "outcome": "death",
+        "feature": "basic_condi_symp_lab"
+      },
+      {
+        "outcome": "death",
+        "feature": "basic_lab"
+      },
+      {
+        "outcome": "poor_prognosis",
+        "feature": "basic_condi_symp"
+      },
+      {
+        "outcome": "poor_prognosis",
+        "feature": "basic_condi_symp_lab"
+      },
+      {
+        "outcome": "poor_prognosis",
+        "feature": "basic_lab"
+      }
+    ],
+    "model_predictors_labels": [
+      "DCS", "DCSL", "DL",
+      "DCS", "DCSL", "DL"
+    ],
+    "coef_file": "/Users/honghan.wu/Documents/UoE/covid/data/latest_analysis_output/final_model_coefs_l1_0410.tsv",
+    "model_turning_file": "/Users/honghan.wu/Documents/UoE/covid/data/latest_analysis_output/model_performance_cv_tuning_summary_l1_0410.tsv"
+  },
+  "model_performances": {
+    "model_turning_file": "/Users/honghan.wu/Documents/UoE/covid/data/latest_analysis_output/model_performance_cv_tuning_summary_l1_0410.tsv",
+    "perfm_groups": [
+      {
+        "category": "Discrimination",
+        "variables": [
+          {
+            "label": "C-index",
+            "field": "roc_auc_score",
+            "type": "numeric",
+            "decimal": true
+          }
+        ]
+      },
+      {
+        "category": "Clinical Usefulness",
+        "variables": [
+          {
+            "label": "Positive Predict value",
+            "field": "PPV",
+            "type": "numeric",
+            "decimal": true
+          },
+          {
+            "label": "Sensitivity",
+            "field": "sensitivity",
+            "type": "numeric",
+            "decimal": true
+          },
+          {
+            "label": "Specificity",
+            "field": "specificity",
+            "type": "numeric",
+            "decimal": true
+          },
+          {
+            "label": "Accuracy",
+            "field": "accuracy",
+            "type": "numeric",
+            "decimal": true
+          }
+        ]
+      }
+    ],
+    "model_selector": [
+      {
+        "outcome": "death",
+        "feature": "basic_condi_symp"
+      },
+      {
+        "outcome": "death",
+        "feature": "basic_condi_symp_lab"
+      },
+      {
+        "outcome": "death",
+        "feature": "basic_lab"
+      },
+      {
+        "outcome": "poor_prognosis",
+        "feature": "basic_condi_symp"
+      },
+      {
+        "outcome": "poor_prognosis",
+        "feature": "basic_condi_symp_lab"
+      },
+      {
+        "outcome": "poor_prognosis",
+        "feature": "basic_lab"
+      }
+    ],
+    "model_predictors_labels": [
+      "DCS", "DCSL", "DL",
+      "DCS", "DCSL", "DL"
+    ]
+  }
+}
