@@ -9,19 +9,11 @@ import os
 sys.path.extend(os.getcwd())
 ```
 
-### Data import
+### Data preparation
 X is dataframe (or array) with n features and m observations with shape (m, n)
 
 y is dataseries (or array) with m observations with shape (m, )
 
-```python
-from utils.IO import DataByContext
-
-data_by_context = DataByContext(feature_choice='all', outcome_choice='death', inclusion_filter='not_readmission')
-
-X = data_by_context.X
-y = data_by_context.y
-```
 
 ### Fitting basic LR regression model
 ```python
