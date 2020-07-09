@@ -1,6 +1,36 @@
-# Quick start for modeling
+# Externally validation the DL-death and DL-poor-outcome models
 
-Have fun! :) 
+### Clone the repo
+```shell script
+git clone https://github.com/huayu-zhang/COVID-19-Risk.git
+cd COVID-19-Risk
+```
+
+### Replace feature and outcome files in the repo folder with real data
+
+**X.csv** with columns [index, age, male, neutrophil, lymphocyte, platelet, crp, creatinine]
+
+**y_death.csv** with columns [index, death]
+
+**y_poor_outcome.csv** with columns [index, poor_outcome] (poor outcome defined by OR(ICU, Death))
+
+Column names do not have to be exact as long as the content is correct.
+
+
+### Validation
+```shell script
+# Create and activiate the environment with conda
+bash create_env.sh
+conda activate covid_19_risk
+
+# External validation
+bash external_validation.sh
+```
+
+Results are saved at **validation_output/**
+
+
+# Quick start for modeling
 
 ### Setup
 ```python
