@@ -1,0 +1,1 @@
+{"path": "./poor_outcome_prediction/validation/kch_stratification/", "feature_columns": ["age", "male", "neutrophil_1", "lymphocyte_1", "platelet_1", "crp_1", "creatinine"], "outcome_column": ["death"], "model_params": {"max_iter": 5000, "penalty": "l1", "C": 16, "solver": "liblinear"}}
