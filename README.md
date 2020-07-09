@@ -1,4 +1,4 @@
-# Externally validation the DL-death and DL-poor-outcome models
+# External validation the DL-death and DL-poor-outcome models
 
 ### Clone the repo
 ```shell script
@@ -29,7 +29,9 @@ bash external_validation.sh
 
 Results are saved at **validation_output/**
 
-
+#
+#
+#
 # Quick start for modeling
 
 ### Setup
